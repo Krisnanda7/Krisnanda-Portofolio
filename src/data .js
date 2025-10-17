@@ -123,6 +123,7 @@ export const listTools = [
 ];
 
 import Proyek1 from "/assets/proyek/proyek1.webp";
+import Proyek1more from "/assets/proyek/proyek1more.webp";
 import Proyek2 from "/assets/proyek/proyek2.webp";
 import Proyek3 from "/assets/proyek/proyek3.webp";
 import Proyek4 from "/assets/proyek/proyek4.webp";
@@ -132,37 +133,46 @@ import Proyek6 from "/assets/proyek/proyek6.webp";
 export const listProyek = [
   {
     id: 1,
-    gambar: Proyek1,
-    nama: "Website Store Komputer",
-    tools: ["HTML", "CSS", "Javascript", "Boostrap", "AOS"],
+    gambar: Proyek4,
+    nama: "Website Rent Office Spaces",
+    tools: [
+      "laravel",
+      "ReactJS",
+      "TailwindCSS",
+      "Vite",
+      "AOS",
+      "MySQL",
+      "Filament",
+    ],
     dad: "200",
   },
   {
     id: 2,
     gambar: Proyek2,
     nama: "Website UMKM",
-    tools: ["HTML", "CSS", "Javascript", "Boostrap", "AOS"],
+    tools: ["ReactJS", "TailwindCSS", "Vite", "AOS", "Figma"],
     dad: "300",
   },
   {
     id: 3,
     gambar: Proyek3,
     nama: "Website Portofolio",
-    tools: ["Vite", "ReactJS", "TailwindCSS", "AOS"],
+    tools: ["ReactJS", "TailwindCSS", "Vite", "AOS", "Figma"],
     dad: "400",
   },
   {
     id: 4,
-    gambar: Proyek4,
-    nama: "Website Course",
-    tools: ["Vite", "ReactJS", "Bootstrap", "AOS"],
+    gambar: Proyek1,
+    Proyek1more,
+    nama: "Website BSC Event ",
+    tools: ["ReactJS", "TailwindCSS", "Vite", "AOS", "Figma"],
     dad: "500",
   },
   {
     id: 5,
     gambar: Proyek5,
     nama: "Website Wedding Package",
-    tools: ["Laravel", "Javascript", "Bootsrap", "Filament"],
+    tools: ["Laravel", "Javascript", "Bootsrap", "Filament", "MySQL"],
     dad: "600",
   },
   // {

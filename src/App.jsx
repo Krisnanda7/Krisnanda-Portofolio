@@ -18,12 +18,11 @@ function App() {
               className="w-10 rounded-md"
               loading="lazy"
             />
-            <q>Hasil yang indah lahir dari ketekunan🔥</q>
+            <q>Learn now, be proud later🔥</q>
           </div>
-          <h1 className="text-5xl/tight font-bold mb-6">Hi, Saya Krisnanda</h1>
+          <h1 className="text-5xl/tight font-bold mb-6">Hi, I'm Krisnanda</h1>
           <p className="text-base/loose mb-6 opacity-50">
-            Saya mempunyai ketertarikan dalam bidang Programing dan Designer,
-            terutama pada pembuatan Website dan Desain.
+            Passionate about Full-Stack Developers & UI/UX Design.
           </p>
           <div className="flex items-center sm:gap-4 gap-2">
             <a
@@ -37,7 +36,7 @@ function App() {
               href="#proyek"
               className="bg-zinc-700 p-4 rounded-2xl hover:bg-zinc-600"
             >
-              Lihat Proyek <i className="ri-arrow-down-line ri-lg"></i>
+              View My Projects <i className="ri-arrow-down-line ri-lg"></i>
             </a>
           </div>
         </div>
@@ -70,14 +69,13 @@ function App() {
             data-aos-duration="1000"
             data-aos-delay="200"
           >
-            Hi, perkenalkan saya I Dewa Gede Mas Bagus Krisnanda, biasa
-            dipanggil Krisnanda, saya adalah seorang Mahasiswa aktif di
-            Primakara University, saya memiliki ketertarikan dalam bidang Web
-            Developer dan Designer, tentunya saya sedang mendalami bidang
-            Programing dan Design, Saya percaya bahwa desain dan fungsionalitas
-            harus berjalan beriringan, sehingga setiap proyek saya yang saya
-            kerjakan tidak hanya terlihat menarik tetapi powerfull yang dapat
-            memberikan pengalaman yang optimal untuk pengguna.
+            My name is Dewa Gede Mas Bagus Krisnanda, commonly known as
+            Krisnanda. I am passionate about full-stack development and UI/UX
+            design, with a strong interest in creating digital experiences that
+            are both functional and visually engaging. I continuously strive to
+            enhance my technical and creative skills to build innovative,
+            user-focused solutions that combine clean design with powerful
+            performance.
           </p>
           <div className="flex items-center justify-between">
             <img
@@ -86,14 +84,6 @@ function App() {
               className="w-12 rounded-md sm:block hidden"
               loading="lazy"
             />
-            <div className="flex items-center gap-6">
-              <div>
-                <h1 className="text-4xl mb-1">
-                  20 <span className="text-violet-500">+</span>
-                </h1>
-              </div>
-              <p>Proyek Selesai</p>
-            </div>
           </div>
         </div>
 
@@ -104,7 +94,7 @@ function App() {
             data-aos="fade-up"
             data-aos-duration="1000"
           >
-            Tools yang dipakai
+            Tools I use
           </h1>
           <p
             className="text-base/loose text-center opacity-50"
@@ -112,7 +102,7 @@ function App() {
             data-aos-duration="1000"
             data-aos-delay="300"
           >
-            Berikut ini beberapa tools yang biasa saya gunakan
+            Here are some of the tools I usually use.
           </p>
           <div className="tool-box mt-14 grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2  grid-cols-1 gap-4">
             {listTools.map((tool) => (
@@ -149,7 +139,7 @@ function App() {
           data-aos="fade-up"
           data-aos-duration="1000"
         >
-          Proyek
+          Projects
         </h1>
         <p
           className="text-base/loose text-center opacity-50"
@@ -157,7 +147,7 @@ function App() {
           data-aos-duration="1000"
           data-aos-delay="300"
         >
-          Berikut ini beberapa proyek yang telah saya buat.
+          Here are some of the projects I've created.
         </p>
         <div className="proyek-box mt-14 grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-4">
           {listProyek.map((proyek) => (
@@ -205,7 +195,7 @@ function App() {
           data-aos="fade-up"
           data-aos-duration="1000"
         >
-          Kontak
+          Contact
         </h1>
         <p
           className="text-base/loose text-center mb-10 opacity-50"
@@ -213,7 +203,7 @@ function App() {
           data-aos-duration="1000"
           data-aos-delay="300"
         >
-          Mari terhubung dengan saya.
+          Let's connect with me
         </p>
         <form
           action="https://formsubmit.co/baguskrisna424@gmail.com"
@@ -226,7 +216,7 @@ function App() {
         >
           <div className="flex flex-col gap-6 ">
             <div className="flex flex-col gap-2">
-              <label className="font-semibold">Nama Lengkap</label>
+              <label className="font-semibold">Name</label>
               <input
                 type="text"
                 name="nama"
@@ -247,7 +237,7 @@ function App() {
             </div>
             <div className="flex flex-col gap-2">
               <label htmlFor="pesan" className="font-semibold">
-                Pesan
+                Message
               </label>
               <textarea
                 name="pesan"
@@ -264,7 +254,7 @@ function App() {
                 type="submit"
                 className="bg-violet-700 p-3 rounded-lg w-full cursor-pointer border border-zinc-600 hover:bg-violet-600"
               >
-                Kirim Pesan
+                Sent message
               </button>
             </div>
           </div>

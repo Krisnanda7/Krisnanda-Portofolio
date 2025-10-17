@@ -6,13 +6,13 @@ const Footer = () => {
       <h1 className="text-2xl font-bold">Krisnanda's Portofolio</h1>
       <div className="flex gap-7 ">
         <a href="#beranda" className="hover:text-violet-600">
-          Beranda
+          Home
         </a>
         <a href="#tentang" className="hover:text-violet-600">
-          Tentang
+          About
         </a>
         <a href="#proyek" className="hover:text-violet-600">
-          Proyek
+          Project
         </a>
       </div>
       <div className="flex items-center gap-3">

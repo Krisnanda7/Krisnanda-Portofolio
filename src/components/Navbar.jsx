@@ -37,7 +37,7 @@ function Navbar() {
             href="#beranda"
             className="sm:text-lg text-base font-medium hover:text-violet-600"
           >
-            Beranda
+            Home
           </a>
         </li>
         <li>
@@ -45,7 +45,7 @@ function Navbar() {
             href="#tentang"
             className="sm:text-lg text-base font-medium hover:text-violet-600"
           >
-            Tentang
+            About
           </a>
         </li>
         <li>
@@ -53,7 +53,7 @@ function Navbar() {
             href="#proyek"
             className="sm:text-lg text-base font-medium hover:text-violet-600"
           >
-            Proyek
+            Project
           </a>
         </li>
         <li>
@@ -61,7 +61,7 @@ function Navbar() {
             href="#kontak"
             className="sm:text-lg text-base font-medium hover:text-violet-600"
           >
-            Kontak
+            Contact
           </a>
         </li>
       </ul>
