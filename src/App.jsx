@@ -36,7 +36,7 @@ function App() {
               href="#proyek"
               className="bg-zinc-700 p-4 rounded-2xl hover:bg-zinc-600"
             >
-              View My Projects <i className="ri-arrow-down-line ri-lg"></i>
+              My Projects <i className="ri-arrow-down-line ri-lg"></i>
             </a>
           </div>
         </div>
@@ -158,7 +158,12 @@ function App() {
               data-aos-duration="1000"
               data-aos-delay={proyek.dad}
             >
-              <img src={proyek.gambar} alt="proyek image" loading="lazy" />
+              <img
+                src={proyek.gambar}
+                alt="proyek image"
+                loading="lazy"
+                className="w-full  lg:h-80 object-contain rounded-md"
+              />
               <div>
                 <h1 className="text-2xl font-bold my-4">{proyek.nama}</h1>
                 <p className="text-base/loose mb-4">{proyek.desk}</p>

@@ -20,6 +20,8 @@ import Tools11 from "/assets/tools/figma.png";
 import Tools12 from "/assets/tools/canva.png";
 import Tools13 from "/assets/tools/ai.png";
 import Tools14 from "/assets/tools/photoshop.png";
+import Tools15 from "/assets/tools/Postman.png";
+import Tools16 from "/assets/tools/git.png";
 
 export const listTools = [
   {
@@ -120,6 +122,20 @@ export const listTools = [
     ket: "Design App",
     dad: "1400",
   },
+  {
+    id: 15,
+    gambar: Tools15,
+    nama: "Postman",
+    ket: "Test API",
+    dad: "1500",
+  },
+  {
+    id: 16,
+    gambar: Tools16,
+    nama: "Git",
+    ket: "Control System",
+    dad: "1600",
+  },
 ];
 
 import Proyek1 from "/assets/proyek/proyek1.webp";
@@ -133,7 +149,7 @@ import Proyek6 from "/assets/proyek/proyek6.webp";
 export const listProyek = [
   {
     id: 1,
-    gambar: Proyek4,
+    gambar: Proyek1,
     nama: "Website Rent Office Spaces",
     tools: [
       "laravel",
@@ -143,44 +159,44 @@ export const listProyek = [
       "AOS",
       "MySQL",
       "Filament",
+      "Figma",
     ],
     dad: "200",
   },
   {
     id: 2,
     gambar: Proyek2,
-    nama: "Website UMKM",
+    nama: "Website Event Bali Starup Camp",
     tools: ["ReactJS", "TailwindCSS", "Vite", "AOS", "Figma"],
     dad: "300",
   },
   {
     id: 3,
     gambar: Proyek3,
-    nama: "Website Portofolio",
-    tools: ["ReactJS", "TailwindCSS", "Vite", "AOS", "Figma"],
+    nama: "Website Restaurant",
+    tools: ["ReactJS", "NextJS", "TailwindCSS", "AOS", "Figma"],
+
     dad: "400",
   },
   {
     id: 4,
-    gambar: Proyek1,
-    Proyek1more,
-    nama: "Website BSC Event ",
+    gambar: Proyek4,
+    nama: "Website Portofolio",
     tools: ["ReactJS", "TailwindCSS", "Vite", "AOS", "Figma"],
     dad: "500",
   },
   {
     id: 5,
     gambar: Proyek5,
-    nama: "Website Wedding Package",
-    tools: ["Laravel", "Javascript", "Bootsrap", "Filament", "MySQL"],
+    nama: "Website Ecommerce",
+    tools: ["Laravel", "Javascript", "Bootsrap", "Filament", "MySQL", "Figma"],
     dad: "600",
   },
-  // {
-  //   id: 6,
-  //   gambar: Proyek6,
-  //   nama: "Company Profile",
-  //   // desk: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis, laborum!",
-  //   tools: ["NextJS", "TailwindCSS", "Framermotion"],
-  //   dad: "700",
-  // },
+  {
+    id: 6,
+    gambar: Proyek6,
+    nama: "Website UMKM",
+    tools: ["ReactJS", "TailwindCSS", "Vite", "AOS", "Figma"],
+    dad: "700",
+  },
 ];
