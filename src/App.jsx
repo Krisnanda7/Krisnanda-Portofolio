@@ -3,7 +3,7 @@ import HomePage from "./pages/HomePage";
 import Navbar from "./components/Navbar";
 import DataImage from "./data ";
 import { listTools, listProyek } from "./data ";
-import FileC from "../public/assets/CV_Krisna_.png";
+import CV from "../public/assets/CV_Krisna_English.png";
 
 function App() {
   return (
@@ -26,7 +26,7 @@ function App() {
           </p>
           <div className="flex items-center sm:gap-4 gap-2">
             <a
-              href={FileC}
+              href={CV}
               className="bg-violet-700 p-4 rounded-2xl hover:bg-violet-600"
               download="CV_KRISNANDA.png"
             >
@@ -225,7 +225,7 @@ function App() {
               <input
                 type="text"
                 name="nama"
-                placeholder="Masukan Nama..."
+                placeholder="Enter Your Name..."
                 required
                 className="border border-zinc-500 p-2 rounded-md"
               />
@@ -235,7 +235,7 @@ function App() {
               <input
                 type="email"
                 name="email"
-                placeholder="Masukan Email..."
+                placeholder="Enter Your Email..."
                 className="border border-zinc-500 p-2 rounded-md"
                 required
               />
@@ -245,7 +245,7 @@ function App() {
                 Message
               </label>
               <textarea
-                name="pesan"
+                name="what you want to say"
                 id="pesan"
                 cols="45"
                 rows="7"
