@@ -22,7 +22,7 @@ function Navbar() {
   return (
     <div className="navbar mx-auto py-7 flex items-center justify-between px-5">
       <div>
-        <h1 className="logo text-3xl text-center bg-white font-bold text-black p-1 md:bg-transparent md:text-white">
+        <h1 className="logo text-3xl text-center  font-bold text-white p-1 md:bg-transparent md:text-white">
           Krisnanda's Portofolio
         </h1>
       </div>

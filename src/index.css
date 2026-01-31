@@ -5,3 +5,26 @@
     font-family: "Poppins", sans-serif;
   }
 }
+
+:root {
+  --swiper-theme-color: #7c3aed; /* Violet 600 */
+  --swiper-navigation-size: 22px;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  background: rgba(24, 24, 27, 0.8); /* zinc-900 with opacity */
+  width: 40px !important;
+  height: 40px !important;
+  border-radius: 50%;
+  color: white !important;
+}
+
+.swiper-pagination-bullet {
+  background: white !important;
+  opacity: 0.5;
+}
+
+.swiper-pagination-bullet-active {
+  opacity: 1;
+}

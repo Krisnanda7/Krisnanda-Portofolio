@@ -145,6 +145,7 @@ import Proyek3 from "/assets/proyek/proyek3.webp";
 import Proyek4 from "/assets/proyek/proyek4.webp";
 import Proyek5 from "/assets/proyek/proyek5.webp";
 import Proyek6 from "/assets/proyek/proyek6.webp";
+import Proyek7 from "/assets/proyek/proyek7.webp";
 
 export const listProyek = [
   {
@@ -152,7 +153,7 @@ export const listProyek = [
     gambar: Proyek1,
     nama: "Website Rent Office Spaces",
     tools: [
-      "laravel",
+      "Laravel",
       "ReactJS",
       "TailwindCSS",
       "Vite",
@@ -172,9 +173,18 @@ export const listProyek = [
   },
   {
     id: 3,
-    gambar: Proyek3,
-    nama: "Website Restaurant",
-    tools: ["ReactJS", "NextJS", "TailwindCSS", "AOS", "Figma"],
+    gambar: Proyek7,
+    nama: "Website Simple E-commerce",
+    tools: [
+      "Laravel",
+      "ReactJS",
+      "TailwindCSS",
+      "Next.Js",
+      "AOS",
+      "MySQL",
+      "Filament",
+      "Figma",
+    ],
 
     dad: "400",
   },

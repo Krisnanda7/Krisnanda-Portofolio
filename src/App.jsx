@@ -11,14 +11,14 @@ function App() {
       {/* Hero Section */}
       <div className="hero grid md:grid-cols-2 items-center pt-10 xl:gap-0 gap-6 grid-cols-1">
         <div className="animate__animated animate__fadeInUp animate__delay-2s">
-          <div className="flex items-center gap-3 mb-6 bg-zinc-800 w-fit p-4 rounded-2xl">
+          <div className="flex items-center gap-3 mb-6 bg-zinc-800 w-fit p-4 rounded-2xl mx-auto sm:mx-0">
             <img
               src={DataImage.HeroImage}
               alt="Hero Image"
               className="w-10 rounded-md"
               loading="lazy"
             />
-            <q>Learn now, be proud later🔥</q>
+            <q> Consistency is the key </q>
           </div>
           <h1 className="text-5xl/tight font-bold mb-6">Hi, I'm Krisnanda</h1>
           <p className="text-base/loose mb-6 opacity-50">
@@ -43,15 +43,14 @@ function App() {
         <img
           src={DataImage.HeroImage}
           alt="Hero Image"
-          className="w-[500px] md:ml-auto
-          animate__animated animate__fadeInUp animate__delay-3s"
+          className="mt-10 w-full max-w-[250px] md:max-w-[400px] h-auto mx-auto md:ml-auto animate__animated animate__fadeInUp animate__delay-3s"
           loading="lazy"
         />
       </div>
       {/* Hero Section */}
 
       {/* About Section */}
-      <div className="tentang mt-32 py-10" id="tentang">
+      <div className="tentang mt-10 py-10" id="tentang">
         <div
           className="xl:w-2/3 lg:w-3/4 w-full mx-auto p-7 bg-zinc-800 rounded-lg animate__animated animate__fadeInUp animate__delay-3s"
           data-aos="fade-up"
@@ -88,7 +87,7 @@ function App() {
         </div>
 
         {/* Tools */}
-        <div className="tools mt-32 ">
+        <div className="tools mt-20 ">
           <h1
             className="text-center text-4xl font-bold mb-2"
             data-aos="fade-up"
@@ -133,7 +132,7 @@ function App() {
       {/* About Section */}
 
       {/* Proyek Section */}
-      <div className="proyek mt-32 py-10" id="proyek">
+      <div className="proyek mt-20 py-10" id="proyek">
         <h1
           className="text-center text-4xl font-bold mb-2"
           data-aos="fade-up"
@@ -194,7 +193,7 @@ function App() {
       {/* Proyek Section */}
 
       {/* Kontak Section */}
-      <div className="kontak mt-32 sm:p-10 p-0" id="kontak">
+      <div className="kontak mt- sm:p-10 p-0" id="kontak">
         <h1
           className="text-4xl mb-2 font-bold text-center"
           data-aos="fade-up"
