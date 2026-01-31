@@ -3,7 +3,7 @@ import HomePage from "./pages/HomePage";
 import Navbar from "./components/Navbar";
 import DataImage from "./data ";
 import { listTools, listProyek } from "./data ";
-import CV from "../public/assets/CV_Krisnanda_2026_fix.png";
+import CV from "../public/assets/Krisnanda_2026.png";
 
 function App() {
   return (
