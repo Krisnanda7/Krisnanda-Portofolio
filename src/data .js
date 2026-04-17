@@ -188,13 +188,13 @@ export const listProyek = [
 
     dad: "400",
   },
-  {
-    id: 4,
-    gambar: Proyek4,
-    nama: "Website Portofolio",
-    tools: ["ReactJS", "TailwindCSS", "Vite", "AOS", "Figma"],
-    dad: "500",
-  },
+  // {
+  //   id: 4,
+  //   gambar: Proyek4,
+  //   nama: "Website Portofolio",
+  //   tools: ["ReactJS", "TailwindCSS", "Vite", "AOS", "Figma"],
+  //   dad: "500",
+  // },
   {
     id: 5,
     gambar: Proyek5,
@@ -202,11 +202,11 @@ export const listProyek = [
     tools: ["Laravel", "Javascript", "Bootsrap", "Filament", "MySQL", "Figma"],
     dad: "600",
   },
-  {
-    id: 6,
-    gambar: Proyek6,
-    nama: "Website UMKM",
-    tools: ["ReactJS", "TailwindCSS", "Vite", "AOS", "Figma"],
-    dad: "700",
-  },
+  // {
+  //   id: 6,
+  //   gambar: Proyek6,
+  //   nama: "Website UMKM",
+  //   tools: ["ReactJS", "TailwindCSS", "Vite", "AOS", "Figma"],
+  //   dad: "700",
+  // },
 ];

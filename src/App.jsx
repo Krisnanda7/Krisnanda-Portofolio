@@ -1,9 +1,14 @@
 import React from "react";
 import HomePage from "./pages/HomePage";
 import Navbar from "./components/Navbar";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination, Autoplay } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
 import DataImage from "./data ";
 import { listTools, listProyek } from "./data ";
-import CV from "../public/assets/Krisnanda_2026.png";
+import CV from "../public/assets/CV/CV_krisnanda.png";
 
 function App() {
   return (
@@ -28,7 +33,7 @@ function App() {
             <a
               href={CV}
               className="bg-violet-700 p-4 rounded-2xl hover:bg-violet-600"
-              download="CV_KRISNANDA.png"
+              download="CV_krisnanda.png"
             >
               Download CV <i className="ri-download-line ri-lg"></i>
             </a>
@@ -148,46 +153,59 @@ function App() {
         >
           Here are some of the projects I've created.
         </p>
-        <div className="proyek-box mt-14 grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-4">
-          {listProyek.map((proyek) => (
-            <div
-              key={proyek.id}
-              className="p-4 bg-zinc-800 rounded-md"
-              data-aos="fade-up"
-              data-aos-duration="1000"
-              data-aos-delay={proyek.dad}
-            >
-              <img
-                src={proyek.gambar}
-                alt="proyek image"
-                loading="lazy"
-                className="w-full  lg:h-80 object-contain rounded-md"
-              />
-              <div>
-                <h1 className="text-2xl font-bold my-4">{proyek.nama}</h1>
-                <p className="text-base/loose mb-4">{proyek.desk}</p>
-                <div className="flex flex-wrap gap-2">
-                  {proyek.tools.map((tool, index) => (
-                    <p
-                      className="py-1 px-3 border border-zinc-500 bg-zinc-600 rounded-md font-semibold"
-                      key={index}
-                    >
-                      {tool}
-                    </p>
-                  ))}
+
+        <div
+          className="mt-14"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-delay="400"
+        >
+          <Swiper
+            modules={[Navigation, Pagination, Autoplay]}
+            spaceBetween={20}
+            slidesPerView={1}
+            navigation
+            pagination={{ clickable: true }}
+            autoplay={{ delay: 3500, disableOnInteraction: false }}
+            breakpoints={{
+              640: { slidesPerView: 2 },
+              1024: { slidesPerView: 3 },
+            }}
+            className="pb-12"
+          >
+            {listProyek.map((proyek, index) => (
+              <SwiperSlide key={proyek.id}>
+                <div className="bg-zinc-800 rounded-xl overflow-hidden border border-zinc-700 h-full">
+                  <div className="relative overflow-hidden">
+                    <img
+                      src={proyek.gambar}
+                      alt={proyek.nama}
+                      loading="lazy"
+                      className="w-full h-52 object-cover transition-transform duration-500 hover:scale-105"
+                    />
+                    <div className="absolute top-3 left-3 bg-violet-700 text-white text-xs font-semibold px-2 py-1 rounded-md">
+                      PROJECT {String(index + 1).padStart(2, "0")}
+                    </div>
+                  </div>
+                  <div className="p-5">
+                    <h3 className="text-lg font-bold text-white mb-4 leading-snug">
+                      {proyek.nama}
+                    </h3>
+                    <div className="flex flex-wrap gap-2">
+                      {proyek.tools.map((tool, i) => (
+                        <span
+                          key={i}
+                          className="text-xs py-1 px-3 border border-zinc-600 bg-zinc-700 text-zinc-300 rounded-full"
+                        >
+                          {tool}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
                 </div>
-                {/* link a href */}
-                {/* <div className="mt-8 text-center">
-                  <a
-                    href="#"
-                    className="bg-violet-700 p-3 rounded-lg block border border-zinc-600 hover:bg-violet-600"
-                  >
-                    Lihat Website
-                  </a>
-                </div> */}
-              </div>
-            </div>
-          ))}
+              </SwiperSlide>
+            ))}
+          </Swiper>
         </div>
       </div>
       {/* Proyek Section */}
