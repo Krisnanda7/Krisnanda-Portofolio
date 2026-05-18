@@ -169,7 +169,7 @@ export const listProyek = [
     gambar: Proyek2,
     nama: "Website Event Bali Starup Camp",
     deskripsi:
-      "Website untuk event startup camp di Bali dengan fitur pemesanan otomatis via WA.",
+      "Website untuk event startup camp di Bali dengan fitur produk popup dan pemesanan otomatis via WA.",
     tools: [
       getTool("Next JS"),
       getTool("React JS"),
