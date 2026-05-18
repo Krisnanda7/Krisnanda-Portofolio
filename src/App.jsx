@@ -64,7 +64,7 @@ function App() {
           <img
             src={DataImage.HeroImage}
             alt="image"
-            className="w-12 rounded-md mb-10 sm:hidden"
+            className="w-12 rounded-md mb-10 sm:hidden rounded-br-full"
             loading="lazy"
           />
           <p
