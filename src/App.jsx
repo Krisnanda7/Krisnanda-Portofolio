@@ -68,7 +68,7 @@ function App() {
             loading="lazy"
           />
           <p
-            className="text-base/loose mb-10"
+            className="text-base/loose mb-10 text-justify"
             data-aos="fade-up"
             data-aos-duration="1000"
             data-aos-delay="200"
