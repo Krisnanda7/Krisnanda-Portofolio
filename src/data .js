@@ -145,6 +145,8 @@ import Proyek4 from "/assets/proyek/proyek4.webp";
 import Proyek5 from "/assets/proyek/proyek5.webp";
 import Proyek7 from "/assets/proyek/proyek7.webp";
 
+const getTool = (nama) => listTools.find((t) => t.nama === nama);
+
 export const listProyek = [
   {
     id: 1,
@@ -153,15 +155,13 @@ export const listProyek = [
     deskripsi:
       "Website untuk menyewa ruang kantor dengan fitur pencarian, pemesanan, dan payment gateway.",
     tools: [
-      "Laravel",
-      "ReactJS",
-      "TailwindCSS",
-      "Vite",
-      "AOS",
-      "MySQL",
-      "Filament",
-      "Figma",
-    ],
+      getTool("Laravel"),
+      getTool("React JS"),
+      getTool("Tailwind CSS"),
+      getTool("Figma"),
+      getTool("Postman"),
+      getTool("Github"),
+    ].filter(Boolean),
     dad: "200",
   },
   {
@@ -170,7 +170,13 @@ export const listProyek = [
     nama: "Website Event Bali Starup Camp",
     deskripsi:
       "Website untuk event startup camp di Bali dengan fitur pemesanan otomatis via WA.",
-    tools: ["ReactJS", "TailwindCSS", "Vite", "AOS", "Figma"],
+    tools: [
+      getTool("Next JS"),
+      getTool("React JS"),
+      getTool("Tailwind CSS"),
+      getTool("Figma"),
+      getTool("Github"),
+    ].filter(Boolean),
     dad: "300",
   },
   {
@@ -180,16 +186,14 @@ export const listProyek = [
     deskripsi:
       "Website e-commerce dengan fitur browsing produk, keranjang belanja, dan checkout WA.",
     tools: [
-      "Laravel",
-      "ReactJS",
-      "TailwindCSS",
-      "Next.Js",
-      "AOS",
-      "MySQL",
-      "Filament",
-      "Figma",
-    ],
-
+      getTool("Laravel"),
+      getTool("Next JS"),
+      getTool("React JS"),
+      getTool("Tailwind CSS"),
+      getTool("Figma"),
+      getTool("Github"),
+      getTool("Postman"),
+    ].filter(Boolean),
     dad: "400",
   },
   {
@@ -198,7 +202,13 @@ export const listProyek = [
     nama: "Website E-commerce Prototype",
     deskripsi:
       "Prototype website e-commerce dengan fitur browsing produk, keranjang belanja, dan checkout.",
-    tools: ["Laravel", "Javascript", "Bootsrap", "Filament", "MySQL", "Figma"],
+    tools: [
+      getTool("Laravel"),
+      getTool("Next JS"),
+      getTool("React JS"),
+      getTool("Bootstrap"),
+      getTool("Figma"),
+    ].filter(Boolean),
     dad: "600",
   },
 ];

@@ -195,12 +195,17 @@ function App() {
                       {proyek.deskripsi}
                     </p>
                     <div className="flex flex-wrap gap-2">
-                      {proyek.tools.map((tool, i) => (
+                      {proyek.tools.map((tool) => (
                         <span
-                          key={i}
-                          className="text-xs py-1 px-3 border border-violet-600  text-zinc-300 rounded-full"
+                          key={tool.id}
+                          className="text-xs py-1   text-zinc-300 rounded-full"
                         >
-                          {tool}
+                          <img
+                            src={tool.gambar}
+                            alt={tool.nama}
+                            className="w-4 h-4 object-contain"
+                            loading="lazy"
+                          />
                         </span>
                       ))}
                     </div>
