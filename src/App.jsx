@@ -191,11 +191,14 @@ function App() {
                     <h3 className="text-lg font-bold text-white mb-4 leading-snug">
                       {proyek.nama}
                     </h3>
+                    <p className="text-sm text-gray-400 mb-4">
+                      {proyek.deskripsi}
+                    </p>
                     <div className="flex flex-wrap gap-2">
                       {proyek.tools.map((tool, i) => (
                         <span
                           key={i}
-                          className="text-xs py-1 px-3 border border-zinc-600 bg-zinc-700 text-zinc-300 rounded-full"
+                          className="text-xs py-1 px-3 border border-violet-600  text-zinc-300 rounded-full"
                         >
                           {tool}
                         </span>

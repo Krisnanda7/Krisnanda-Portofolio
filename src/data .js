@@ -139,12 +139,10 @@ export const listTools = [
 ];
 
 import Proyek1 from "/assets/proyek/proyek1.webp";
-import Proyek1more from "/assets/proyek/proyek1more.webp";
 import Proyek2 from "/assets/proyek/proyek2.webp";
 import Proyek3 from "/assets/proyek/proyek3.webp";
 import Proyek4 from "/assets/proyek/proyek4.webp";
 import Proyek5 from "/assets/proyek/proyek5.webp";
-import Proyek6 from "/assets/proyek/proyek6.webp";
 import Proyek7 from "/assets/proyek/proyek7.webp";
 
 export const listProyek = [
@@ -152,6 +150,8 @@ export const listProyek = [
     id: 1,
     gambar: Proyek1,
     nama: "Website Rent Office Spaces",
+    deskripsi:
+      "Website untuk menyewa ruang kantor dengan fitur pencarian, pemesanan, dan pembayaran online.",
     tools: [
       "Laravel",
       "ReactJS",
@@ -168,13 +168,17 @@ export const listProyek = [
     id: 2,
     gambar: Proyek2,
     nama: "Website Event Bali Starup Camp",
+    deskripsi:
+      "Website untuk event startup camp di Bali dengan fitur pemesanan otomatis via whatsapp.",
     tools: ["ReactJS", "TailwindCSS", "Vite", "AOS", "Figma"],
     dad: "300",
   },
   {
     id: 3,
     gambar: Proyek7,
-    nama: "Website Simple E-commerce",
+    nama: "Website E-commerce",
+    deskripsi:
+      "Website e-commerce dengan fitur browsing produk, keranjang belanja, dan checkout WA.",
     tools: [
       "Laravel",
       "ReactJS",
@@ -198,7 +202,9 @@ export const listProyek = [
   {
     id: 5,
     gambar: Proyek5,
-    nama: "Website Ecommerce",
+    nama: "Website E-commerce Prototype",
+    deskripsi:
+      "Prototype website e-commerce dengan fitur browsing produk, keranjang belanja, dan checkout.",
     tools: ["Laravel", "Javascript", "Bootsrap", "Filament", "MySQL", "Figma"],
     dad: "600",
   },
