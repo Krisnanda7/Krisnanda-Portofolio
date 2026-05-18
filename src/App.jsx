@@ -20,7 +20,7 @@ function App() {
             <img
               src={DataImage.HeroImage}
               alt="Hero Image"
-              className="w-10 border-violet-600 rounded-br-full "
+              className="w-10 border border-violet-600 rounded-full "
               loading="lazy"
             />
             <q> Consistency is the key </q>
@@ -64,7 +64,7 @@ function App() {
           <img
             src={DataImage.HeroImage}
             alt="image"
-            className="w-12 rounded-md mb-10 sm:hidden border-violet-600 rounded-br-full"
+            className="w-12  mb-10 sm:hidden border border-violet-600 rounded-full"
             loading="lazy"
           />
           <p
@@ -85,7 +85,7 @@ function App() {
             <img
               src={DataImage.HeroImage}
               alt="image"
-              className="w-12 border-violet-600 rounded-br-full  sm:block hidden"
+              className="w-12 border border-violet-600 rounded-full  sm:block hidden"
               loading="lazy"
             />
           </div>
