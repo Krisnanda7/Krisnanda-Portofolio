@@ -206,7 +206,7 @@ function App() {
                           <img
                             src={tool.gambar}
                             alt={tool.nama}
-                            className="w-4 h-4 object-contain"
+                            className="w-5 h-5 object-contain"
                             loading="lazy"
                           />
                         </span>
