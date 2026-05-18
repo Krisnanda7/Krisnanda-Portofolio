@@ -151,7 +151,7 @@ export const listProyek = [
     gambar: Proyek1,
     nama: "Website Rent Office Spaces",
     deskripsi:
-      "Website untuk menyewa ruang kantor dengan fitur pencarian, pemesanan, dan pembayaran online.",
+      "Website untuk menyewa ruang kantor dengan fitur pencarian, pemesanan, dan payment gateway.",
     tools: [
       "Laravel",
       "ReactJS",
@@ -169,7 +169,7 @@ export const listProyek = [
     gambar: Proyek2,
     nama: "Website Event Bali Starup Camp",
     deskripsi:
-      "Website untuk event startup camp di Bali dengan fitur pemesanan otomatis via whatsapp.",
+      "Website untuk event startup camp di Bali dengan fitur pemesanan otomatis via WA.",
     tools: ["ReactJS", "TailwindCSS", "Vite", "AOS", "Figma"],
     dad: "300",
   },
@@ -192,13 +192,6 @@ export const listProyek = [
 
     dad: "400",
   },
-  // {
-  //   id: 4,
-  //   gambar: Proyek4,
-  //   nama: "Website Portofolio",
-  //   tools: ["ReactJS", "TailwindCSS", "Vite", "AOS", "Figma"],
-  //   dad: "500",
-  // },
   {
     id: 5,
     gambar: Proyek5,
@@ -208,11 +201,4 @@ export const listProyek = [
     tools: ["Laravel", "Javascript", "Bootsrap", "Filament", "MySQL", "Figma"],
     dad: "600",
   },
-  // {
-  //   id: 6,
-  //   gambar: Proyek6,
-  //   nama: "Website UMKM",
-  //   tools: ["ReactJS", "TailwindCSS", "Vite", "AOS", "Figma"],
-  //   dad: "700",
-  // },
 ];
