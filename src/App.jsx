@@ -20,7 +20,7 @@ function App() {
             <img
               src={DataImage.HeroImage}
               alt="Hero Image"
-              className="w-10 rounded-md"
+              className="w-10 rounded-br-full"
               loading="lazy"
             />
             <q> Consistency is the key </q>
@@ -48,7 +48,7 @@ function App() {
         <img
           src={DataImage.HeroImage}
           alt="Hero Image"
-          className="mt-10 w-full max-w-[250px] md:max-w-[400px] h-auto mx-auto md:ml-auto animate__animated animate__fadeInUp animate__delay-3s"
+          className="mt-10 w-full max-w-[250px] md:max-w-[400px] h-auto mx-auto md:ml-auto animate__animated animate__fadeInUp animate__delay-3s border border-violet-600 rounded-bl-full"
           loading="lazy"
         />
       </div>
@@ -85,7 +85,7 @@ function App() {
             <img
               src={DataImage.HeroImage}
               alt="image"
-              className="w-12 rounded-md sm:block hidden"
+              className="w-12 rounded-br-full  sm:block hidden"
               loading="lazy"
             />
           </div>
