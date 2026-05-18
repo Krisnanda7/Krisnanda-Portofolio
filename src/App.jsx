@@ -32,7 +32,7 @@ function App() {
           <div className="flex items-center sm:gap-4 gap-2">
             <a
               href={CV}
-              className="bg-violet-700 p-4 rounded-2xl hover:bg-violet-600"
+              className="bg-violet-600 p-4 rounded-2xl hover:bg-violet-800"
               download="CV_krisnanda.png"
             >
               Download CV <i className="ri-download-line ri-lg"></i>
@@ -111,7 +111,7 @@ function App() {
           <div className="tool-box mt-14 grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2  grid-cols-1 gap-4">
             {listTools.map((tool) => (
               <div
-                className="flex items-center gap-2 p-3 border border-zinc-600 rounded-md 
+                className="flex items-center gap-2 p-3 border border-violet-900 rounded-md 
             hover:bg-zinc-800 group"
                 data-aos="fade-up"
                 data-aos-duration="1000"
