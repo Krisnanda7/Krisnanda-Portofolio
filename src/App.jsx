@@ -173,7 +173,7 @@ function App() {
             }}
             className="pb-12"
           >
-            {listProyek.map((proyek, index) => (
+            {listProyek.map((proyek) => (
               <SwiperSlide key={proyek.id}>
                 <div className="bg-zinc-800 rounded-xl overflow-hidden border border-zinc-700 h-full">
                   <div className="relative overflow-hidden">
@@ -184,7 +184,7 @@ function App() {
                       className="w-full h-52 object-cover transition-transform duration-500 hover:scale-105"
                     />
                     <div className="absolute top-3 left-3 bg-violet-700 text-white text-xs font-semibold px-2 py-1 rounded-md">
-                      PROJECT {String(index + 1).padStart(2, "0")}
+                      PROJECT
                     </div>
                   </div>
                   <div className="p-5">
