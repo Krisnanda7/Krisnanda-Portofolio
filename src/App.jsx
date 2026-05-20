@@ -207,6 +207,7 @@ function App() {
                     <p className="text-sm text-gray-400 mb-4">
                       {proyek.deskripsi}
                     </p>
+
                     <h2 className="text-sm  text-white mb-2">
                       Framework & Tools :
                     </h2>
