@@ -140,10 +140,17 @@ export const listTools = [
   },
   {
     id: 17,
-    gambar: Tools16,
-    nama: "Git",
-    ket: "Control System",
+    gambar: Tools17,
+    nama: "Supabase",
+    ket: "Backend Service",
     dad: "1700",
+  },
+  {
+    id: 18,
+    gambar: Tools18,
+    nama: "Expo",
+    ket: "Framework",
+    dad: "1800",
   },
 ];
 
