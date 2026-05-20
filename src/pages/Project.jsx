@@ -100,59 +100,75 @@ function Project() {
       {/* Modal */}
       {selected && (
         <div
-          className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 backdrop-blur-sm p-4"
+          className="fixed inset-0 z-50 flex items-center justify-center p-4"
+          style={{ animation: "fadeIn 0.2s ease" }}
           onClick={() => setSelected(null)}
         >
+          {/* Backdrop */}
+          <div className="absolute inset-0 bg-black/85 backdrop-blur-md" />
+
+          {/* Content */}
           <div
-            className="bg-zinc-900 rounded-2xl overflow-hidden border border-zinc-700 max-w-2xl w-full shadow-2xl"
+            className="relative z-10 max-w-4xl w-full"
+            style={{
+              animation: "popUp 0.3s cubic-bezier(0.34, 1.56, 0.64, 1)",
+            }}
             onClick={(e) => e.stopPropagation()}
           >
-            {/* Gambar */}
-            <div className="relative">
+            {/* Glow effect */}
+            <div className="absolute -inset-1 bg-violet-500/20 rounded-2xl blur-xl" />
+
+            {/* Image container */}
+            <div className="relative rounded-2xl overflow-hidden border border-violet-500/30 shadow-2xl shadow-violet-900/40">
               <img
                 src={selected.gambar}
                 alt={selected.nama}
-                className="w-full object-contain max-h-[60vh]"
+                className="w-full h-auto object-contain max-h-[85vh]"
               />
-              <button
-                onClick={() => setSelected(null)}
-                className="absolute top-3 right-3 bg-black/60 hover:bg-black text-white rounded-full w-8 h-8 flex items-center justify-center text-lg transition cursor-pointer"
-              >
-                ✕
-              </button>
-            </div>
 
-            {/* Detail */}
-            <div className="p-6">
-              <div className="flex items-start justify-between gap-4 mb-3">
-                <h3 className="text-xl font-bold text-white">
-                  {selected.nama}
-                </h3>
-                <span className="bg-violet-700 text-white text-xs font-semibold px-2 py-1 rounded-md flex-shrink-0">
+              {/* Top bar overlay */}
+              <div className="absolute top-0 left-0 right-0 flex items-center justify-between px-4 py-3 bg-gradient-to-b from-black/70 to-transparent">
+                <span className="bg-violet-700 text-white text-xs font-semibold px-2 py-1 rounded-md">
                   PROJECT
                 </span>
+                <button
+                  onClick={() => setSelected(null)}
+                  className="bg-white/10 hover:bg-white/20 backdrop-blur-sm text-white rounded-full w-8 h-8 flex items-center justify-center transition-all hover:scale-110 cursor-pointer border border-white/20"
+                >
+                  ✕
+                </button>
               </div>
-              <p className="text-sm text-gray-400 mb-4">{selected.deskripsi}</p>
-              <h2 className="text-sm text-white mb-2">Framework & Tools :</h2>
-              <div className="flex flex-wrap gap-2">
-                {selected.tools.map((tool) => (
-                  <div
-                    key={tool.id}
-                    className="flex items-center gap-1.5 bg-zinc-800 rounded-lg px-2 py-1"
-                  >
-                    <img
-                      src={tool.gambar}
-                      alt={tool.nama}
-                      className="w-4 h-4 object-contain"
-                    />
-                    <span className="text-xs text-zinc-300">{tool.nama}</span>
-                  </div>
-                ))}
+
+              {/* Bottom bar overlay */}
+              <div className="absolute bottom-0 left-0 right-0 px-5 py-4 bg-gradient-to-t from-black/80 to-transparent">
+                <h3 className="text-white font-bold text-lg">
+                  {selected.nama}
+                </h3>
+                <p className="text-zinc-400 text-sm mt-0.5 line-clamp-1">
+                  {selected.deskripsi}
+                </p>
               </div>
             </div>
+
+            {/* Click outside hint */}
+            <p className="text-center text-zinc-600 text-xs mt-3">
+              Click outside to close
+            </p>
           </div>
         </div>
       )}
+
+      {/* Animasi */}
+      <style>{`
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  @keyframes popUp {
+    from { opacity: 0; transform: scale(0.85) translateY(20px); }
+    to { opacity: 1; transform: scale(1) translateY(0); }
+  }
+`}</style>
     </section>
   );
 }
