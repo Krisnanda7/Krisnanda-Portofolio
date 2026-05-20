@@ -22,6 +22,8 @@ import Tools13 from "/assets/tools/ai.png";
 import Tools14 from "/assets/tools/photoshop.png";
 import Tools15 from "/assets/tools/Postman.png";
 import Tools16 from "/assets/tools/git.png";
+import Tools17 from "/assets/tools/supabase.png";
+import Tools18 from "/assets/tools/expo.png";
 
 export const listTools = [
   {
@@ -136,6 +138,13 @@ export const listTools = [
     ket: "Control System",
     dad: "1600",
   },
+  {
+    id: 17,
+    gambar: Tools16,
+    nama: "Git",
+    ket: "Control System",
+    dad: "1700",
+  },
 ];
 
 import Proyek1 from "/assets/proyek/proyek1.webp";
@@ -210,5 +219,20 @@ export const listProyek = [
       getTool("Figma"),
     ].filter(Boolean),
     dad: "600",
+  },
+  {
+    id: 6,
+    gambar: Proyek3,
+    nama: "Website Prototype Company Profile Restaurant",
+    deskripsi:
+      "Website profil perusahaan dengan informasi tentang visi, misi, dan layanan yang ditawarkan.",
+    tools: [
+      getTool("Laravel"),
+      getTool("Next JS"),
+      getTool("React JS"),
+      getTool("Tailwind CSS"),
+      getTool("Figma"),
+    ].filter(Boolean),
+    dad: "700",
   },
 ];
