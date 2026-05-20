@@ -144,7 +144,7 @@ export const listTools = [
     id: 17,
     gambar: Tools17,
     nama: "Supabase",
-    ket: "Backend Service",
+    ket: "Backend",
     dad: "1700",
   },
   {
