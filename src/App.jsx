@@ -121,7 +121,7 @@ function App() {
                 <img
                   src={tool.gambar}
                   alt="tools image"
-                  className="w-14 bg-zinc-800 p-1 group-hover:bg-zinc-900"
+                  className="w-14 rounded-xl  bg-zinc-700 p-1 group-hover:bg-zinc-900"
                   loading="lazy"
                 />
                 <div>

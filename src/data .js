@@ -24,6 +24,8 @@ import Tools15 from "/assets/tools/Postman.png";
 import Tools16 from "/assets/tools/git.png";
 import Tools17 from "/assets/tools/supabase.png";
 import Tools18 from "/assets/tools/expo.png";
+import Tools19 from "/assets/tools/filament.png";
+import Tools20 from "/assets/tools/vercel.svg";
 
 export const listTools = [
   {
@@ -151,6 +153,20 @@ export const listTools = [
     nama: "Expo",
     ket: "Framework",
     dad: "1800",
+  },
+  {
+    id: 19,
+    gambar: Tools19,
+    nama: "Filament",
+    ket: "Admin Panel",
+    dad: "1900",
+  },
+  {
+    id: 20,
+    gambar: Tools20,
+    nama: "Vercel",
+    ket: "Hosting",
+    dad: "2000",
   },
 ];
 
