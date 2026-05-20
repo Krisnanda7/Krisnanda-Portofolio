@@ -185,7 +185,7 @@ export const listProyek = [
     gambar: Proyek1,
     nama: "Website Rent Office Spaces",
     deskripsi:
-      "Website untuk menyewa ruang kantor dengan fitur pencarian, pemesanan, dan payment gateway.",
+      "Website for renting office spaces with features for browsing available spaces, making reservations, and contacting the owner via WhatsApp.",
     tools: [
       getTool("Laravel"),
       getTool("React JS"),
@@ -201,7 +201,7 @@ export const listProyek = [
     gambar: Proyek2,
     nama: "Website Event Bali Starup Camp",
     deskripsi:
-      "Website untuk event startup camp di Bali dengan fitur produk popup dan pemesanan otomatis via WA.",
+      "Website for the Bali Startup Camp event, featuring information about the event, schedule, speakers, and registration form.",
     tools: [
       getTool("Next JS"),
       getTool("React JS"),
@@ -216,7 +216,7 @@ export const listProyek = [
     gambar: Proyek7,
     nama: "Website E-commerce",
     deskripsi:
-      "Website e-commerce dengan fitur browsing produk, keranjang belanja, dan checkout WA.",
+      "E-commerce website with features for browsing products, adding to cart, and checkout via WhatsApp.",
     tools: [
       getTool("Laravel"),
       getTool("Next JS"),
@@ -233,7 +233,7 @@ export const listProyek = [
     gambar: Proyek5,
     nama: "Website E-commerce Prototype",
     deskripsi:
-      "Prototype website e-commerce dengan fitur browsing produk, keranjang belanja, dan checkout.",
+      "Prototype e-commerce website with features for browsing products, adding to cart, and checkout.",
     tools: [
       getTool("Laravel"),
       getTool("Next JS"),
@@ -248,7 +248,7 @@ export const listProyek = [
     gambar: Proyek3,
     nama: "Website Prototype Company Profile Restaurant",
     deskripsi:
-      "Website profil perusahaan dengan informasi tentang visi, misi, dan layanan yang ditawarkan.",
+      "Prototype company profile website for a restaurant, featuring information about the restaurant, menu, and contact form.",
     tools: [
       getTool("Laravel"),
       getTool("Next JS"),
