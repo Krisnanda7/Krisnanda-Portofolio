@@ -102,7 +102,7 @@ function App() {
         </div>
 
         {/* Tools */}
-        <div className="tools mt-20 ">
+        <div className="tools mt-20">
           <h1
             className="text-center text-4xl font-bold mb-2"
             data-aos="fade-up"
@@ -116,13 +116,14 @@ function App() {
             data-aos-duration="1000"
             data-aos-delay="300"
           >
-            Here are some of the tools I usually use.
+            Here are some of the Framework & Tools I usually use.
           </p>
-          <div className="tool-box mt-14 grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2  grid-cols-1 gap-4">
+
+          <div className="tool-box mt-14 grid lg:grid-cols-4 md:grid-cols-3 grid-cols-2 gap-3">
             {listTools.map((tool) => (
               <div
-                className="flex items-center gap-2 p-3 border border-violet-900 rounded-md 
-            hover:bg-zinc-800 group"
+                className="flex items-center gap-2 p-2.5 border border-violet-900 rounded-lg
+        hover:bg-zinc-800 group"
                 data-aos="fade-up"
                 data-aos-duration="1000"
                 data-aos-delay={tool.dad}
@@ -130,13 +131,15 @@ function App() {
               >
                 <img
                   src={tool.gambar}
-                  alt="tools image"
-                  className="w-14 rounded-xl  bg-zinc-700 p-1 group-hover:bg-zinc-900"
+                  alt={tool.nama}
+                  className="w-10 h-10 rounded-lg bg-zinc-700 p-1 object-contain group-hover:bg-zinc-900 flex-shrink-0"
                   loading="lazy"
                 />
-                <div>
-                  <h4 className="font-bold">{tool.nama}</h4>
-                  <p className="opacity-50">{tool.ket}</p>
+                <div className="min-w-0">
+                  <h4 className="font-bold text-sm leading-tight truncate">
+                    {tool.nama}
+                  </h4>
+                  <p className="opacity-50 text-xs mt-0.5">{tool.ket}</p>
                 </div>
               </div>
             ))}
