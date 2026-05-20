@@ -22,8 +22,8 @@ function HomePage() {
             <q> Consistency is the key </q>
           </div>
           <h1 className="text-5xl/tight font-bold mb-6">Hi, I'm Krisnanda</h1>
-          <p className="text-base/loose mb-6 opacity-50">
-            Passionate about Full-Stack Developers & UI/UX Design.
+          <p className="text-base/loose mb-6 opacity-80">
+            Full-Stack Developers | UI/UX Design | Product Management
           </p>
           <div className="flex items-center sm:gap-4 gap-2">
             <a
