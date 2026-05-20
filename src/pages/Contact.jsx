@@ -17,12 +17,12 @@ function Contact() {
       <div className="max-w-5xl mx-auto">
         {/* Header */}
         <div className="flex flex-col items-center sm:items-start mb-12">
-          <div className="flex items-center gap-2 bg-violet-500/10 border border-violet-500/30 rounded-full px-4 py-1.5 mb-5">
+          {/* <div className="flex items-center gap-2 bg-violet-500/10 border border-violet-500/30 rounded-full px-4 py-1.5 mb-5">
             <span className="w-1.5 h-1.5 rounded-full bg-violet-400 animate-pulse" />
             <span className="text-xs text-violet-400 uppercase tracking-widest">
               Available for work
             </span>
-          </div>
+          </div> */}
           <h1
             className="text-4xl sm:text-5xl font-bold text-zinc-100 leading-tight mb-3 text-center sm:text-left"
             data-aos="fade-up"
@@ -124,9 +124,9 @@ function Contact() {
                 <option value="Project Collaboration">
                   Project Collaboration
                 </option>
-                <option value="Freelance Work">Freelance Work</option>
+                <option value="Freelance Work">Freelance</option>
                 <option value="Job Opportunity">Job Opportunity</option>
-                <option value="General Inquiry">General Inquiry</option>
+                <option value="General Inquiry">General Questions</option>
               </select>
             </div>
 
