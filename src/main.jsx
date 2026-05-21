@@ -17,8 +17,7 @@ AOS.init();
 
 createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    {/* sementara matikan dulu untuk testing */}
-    {/* <PreLoader /> */}
+    <PreLoader />
 
     <div className="container mx-auto px-4">
       <Navbar />
