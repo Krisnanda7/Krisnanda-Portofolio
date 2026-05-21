@@ -7,12 +7,9 @@ import "remixicon/fonts/remixicon.css";
 import Footer from "./components/Footer";
 import PreLoader from "./components/PreLoader";
 import "animate.css";
-import { inject } from "@vercel/analytics";
-
 import AOS from "aos";
-import "aos/dist/aos.css"; // You can also use <link> for styles
-// ..
-inject();
+import "aos/dist/aos.css";
+import { Analytics } from "@vercel/analytics/react";
 AOS.init();
 
 createRoot(document.getElementById("root")).render(
@@ -23,5 +20,6 @@ createRoot(document.getElementById("root")).render(
       <App />
       <Footer />
     </div>
+    <Analytics />
   </React.StrictMode>,
 );
