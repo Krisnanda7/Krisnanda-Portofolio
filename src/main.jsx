@@ -7,21 +7,25 @@ import "remixicon/fonts/remixicon.css";
 import Footer from "./components/Footer";
 import PreLoader from "./components/PreLoader";
 import "animate.css";
+
 import { inject } from "@vercel/analytics";
+
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { Analytics } from "@vercel/analytics/react";
+
 AOS.init();
 
 createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <PreLoader />
+    {/* sementara matikan dulu untuk testing */}
+    {/* <PreLoader /> */}
+
     <div className="container mx-auto px-4">
       <Navbar />
       <App />
       <Footer />
     </div>
-    <Analytics />
   </React.StrictMode>,
 );
+
 inject();
